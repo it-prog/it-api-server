@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "widgets",
+  "info": {
+    "singularName": "widget",
+    "pluralName": "widgets",
+    "displayName": "Widget Sosial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "linkWidget": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "domainlists",
+  "info": {
+    "singularName": "domainlist",
+    "pluralName": "domainlists",
+    "displayName": "Domain Check",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "domain": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.domain-list"
+    }
+  }
+}

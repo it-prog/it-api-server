@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_runningtexts",
+  "info": {
+    "displayName": "Runningtext"
+  },
+  "options": {},
+  "attributes": {
+    "marquee": {
+      "type": "text"
+    }
+  }
+}

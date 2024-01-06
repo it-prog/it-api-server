@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_domain_lists",
+  "info": {
+    "displayName": "Domain List"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "domainUrl": {
+      "type": "string"
+    }
+  }
+}

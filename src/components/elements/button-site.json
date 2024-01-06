@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_button_sites",
+  "info": {
+    "displayName": "Button Site"
+  },
+  "options": {},
+  "attributes": {
+    "Daftar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "Login": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "Alternatif": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link",
+      "min": 5,
+      "max": 5
+    }
+  }
+}

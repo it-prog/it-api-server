@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buttonlinks",
+  "info": {
+    "singularName": "buttonlink",
+    "pluralName": "buttonlinks",
+    "displayName": "Button Link",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amp_and_landing_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    }
+  }
+}

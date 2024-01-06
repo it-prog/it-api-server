@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_footertexts",
+  "info": {
+    "displayName": "Footertext"
+  },
+  "options": {},
+  "attributes": {
+    "textfooter": {
+      "type": "text"
+    }
+  }
+}
