@@ -867,7 +867,7 @@ export interface ApiProfileProfile extends Schema.CollectionType {
   info: {
     singularName: 'profile';
     pluralName: 'profiles';
-    displayName: 'Group M-Site';
+    displayName: 'Profile Group ';
     description: '';
   };
   options: {
