@@ -15,12 +15,41 @@
     "domainName": {
       "type": "string"
     },
-    "ampName": {
+    "nameTag": {
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "ampName"
+      "type": "uid"
+    },
+    "MetaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-data"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
+    },
+    "bodytext": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.richtext"
+    },
+    "FaqContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.faqcontent"
+    },
+    "FooterContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footertext"
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
     }
   }
 }

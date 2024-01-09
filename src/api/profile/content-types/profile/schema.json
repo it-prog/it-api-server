@@ -12,31 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "fullName": {
       "type": "string"
     },
     "avatar": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     },
     "user": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
-    "domain_check": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::domainlist.domainlist"
-    },
-    "widget": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::widget.widget"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "profile"
     }
   }
 }

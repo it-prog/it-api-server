@@ -48,6 +48,18 @@ export interface ElementsFootertext extends Schema.Component {
   };
 }
 
+export interface ElementsHeader extends Schema.Component {
+  collectionName: 'components_elements_headers';
+  info: {
+    displayName: 'Header';
+  };
+  attributes: {
+    logo: Attribute.Component<'elements.logo'>;
+    runningtext: Attribute.Component<'elements.runningtext'>;
+    banner: Attribute.Component<'elements.slide'>;
+  };
+}
+
 export interface ElementsLogo extends Schema.Component {
   collectionName: 'components_elements_logos';
   info: {
@@ -154,6 +166,7 @@ declare module '@strapi/types' {
       'elements.faqcontent': ElementsFaqcontent;
       'elements.footer': ElementsFooter;
       'elements.footertext': ElementsFootertext;
+      'elements.header': ElementsHeader;
       'elements.logo': ElementsLogo;
       'elements.richtext': ElementsRichtext;
       'elements.runningtext': ElementsRunningtext;

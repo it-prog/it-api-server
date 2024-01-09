@@ -68,9 +68,10 @@
     "profile": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::profile.profile"
+      "target": "api::profile.profile",
+      "mappedBy": "user"
     },
-    "telegramID": {
+    "telegramId": {
       "type": "string"
     }
   }

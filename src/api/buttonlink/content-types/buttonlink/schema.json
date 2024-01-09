@@ -12,10 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "amp_and_landing_pages": {
+    "sitelink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button-site"
+    },
+    "footerlink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.footer"
+    },
+    "posts": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post"
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
     }
   }
 }
