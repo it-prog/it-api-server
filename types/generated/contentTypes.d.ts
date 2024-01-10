@@ -825,7 +825,7 @@ export interface ApiDomainlistDomainlist extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    domain: Attribute.Component<'shared.domain-list', true>;
+    domain: Attribute.Component<'elements.domainlist'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

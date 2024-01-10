@@ -14,8 +14,8 @@
   "attributes": {
     "domain": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.domain-list"
+      "repeatable": false,
+      "component": "elements.domainlist"
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_domainlists",
+  "info": {
+    "displayName": "Domainlist"
+  },
+  "options": {},
+  "attributes": {
+    "domainlist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.domain-list"
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    }
+  }
+}

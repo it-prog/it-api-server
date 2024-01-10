@@ -16,6 +16,21 @@ export interface ElementsButtonSite extends Schema.Component {
   };
 }
 
+export interface ElementsDomainlist extends Schema.Component {
+  collectionName: 'components_elements_domainlists';
+  info: {
+    displayName: 'Domainlist';
+  };
+  attributes: {
+    domainlist: Attribute.Component<'shared.domain-list', true>;
+    profile: Attribute.Relation<
+      'elements.domainlist',
+      'oneToOne',
+      'api::profile.profile'
+    >;
+  };
+}
+
 export interface ElementsFaqcontent extends Schema.Component {
   collectionName: 'components_elements_faqcontents';
   info: {
@@ -163,6 +178,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'elements.button-site': ElementsButtonSite;
+      'elements.domainlist': ElementsDomainlist;
       'elements.faqcontent': ElementsFaqcontent;
       'elements.footer': ElementsFooter;
       'elements.footertext': ElementsFootertext;
