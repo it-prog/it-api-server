@@ -755,7 +755,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'oneToMany',
       'api::profile.profile'
     >;
-    telegramId: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -891,13 +890,14 @@ export interface ApiProfileProfile extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    fullName: Attribute.String;
+    userId: Attribute.String;
     avatar: Attribute.Media;
     user: Attribute.Relation<
       'api::profile.profile',
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    telegramId: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
